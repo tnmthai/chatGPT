@@ -1,13 +1,6 @@
 import streamlit as st
 from model import GeneralModel
-st.markdown("""
-<style>
-input {
-  unicode:override;
 
-}
-</style>
-    """, unsafe_allow_html=True)
 
 def app():
 
@@ -29,7 +22,7 @@ def app():
 
         # st.write("---")
 
-        s_example = "Birds, flowers, love, sun"
+        s_example = "Hello, how are you today?"
         input = st.text_area(
             "Use the example below or input your own text in English",
             value=s_example,
