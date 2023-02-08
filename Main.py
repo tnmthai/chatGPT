@@ -1,6 +1,13 @@
 import streamlit as st
 from model import GeneralModel
-
+st.markdown("""
+<style>
+input {
+  unicode-bidi:bidi-override;
+  direction: RTL;
+}
+</style>
+    """, unsafe_allow_html=True)
 
 def app():
 
