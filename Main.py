@@ -3,8 +3,8 @@ from model import GeneralModel
 st.markdown("""
 <style>
 input {
-  unicode-bidi:bidi-override;
-  direction: RTL;
+  unicode:override;
+
 }
 </style>
     """, unsafe_allow_html=True)
