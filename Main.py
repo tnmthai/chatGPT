@@ -7,7 +7,8 @@ def app():
     # Creating an object of prediction service
     pred = GeneralModel()
 
-    api_key = st.sidebar.text_input("APIkey", type="password")
+#     api_key = st.sidebar.text_input("APIkey", type="password")
+    api_key ="thaitran"
     # Using the streamlit cache
     @st.cache
     def process_prompt(input):
