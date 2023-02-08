@@ -18,7 +18,7 @@ def app():
     if api_key:
 
         # Setting up the Title
-        st.title("Write a poem based on these words")
+        st.title("ChatGPT for non-account")
 
         # st.write("---")
 
