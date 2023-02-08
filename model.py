@@ -8,7 +8,7 @@ This is the poem: """
 
 def set_openai_key(key):
     """Sets OpenAI key."""
-    openai.api_key = "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"
+    openai.api_key = key
 
 class GeneralModel:
     def __init__(self):
