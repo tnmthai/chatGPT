@@ -8,7 +8,7 @@ def app():
     pred = GeneralModel()
 
 #     api_key = st.sidebar.text_input("APIkey", type="password")
-    api_key ="thaitran"
+    api_key =st.secrets["key"]
     # Using the streamlit cache
     @st.cache
     def process_prompt(input):
