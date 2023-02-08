@@ -39,5 +39,5 @@ class GeneralModel:
         """
         # Setting the OpenAI API key got from the OpenAI dashboard
         set_openai_key(api_key)
-        output = self.query(input = input)
+        output = self.query(prompt = input)
         return output
