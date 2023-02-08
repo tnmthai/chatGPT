@@ -1,11 +1,5 @@
 import openai
 
-poem = """Write a poem with the following words: 
----
-{input}
----
-This is the poem: """
-
 def set_openai_key(key):
     """Sets OpenAI key."""
     openai.api_key = key
@@ -23,13 +17,10 @@ class GeneralModel:
         # arguments to send the API
         kwargs = {
             "engine": "text-davinci-002",
-            "temperature": 0.85,
-            "max_tokens": 600,
-            "best_of": 1,
-            "top_p": 1,
-            "frequency_penalty": 0,
-            "presence_penalty": 0,
-            "stop": ["###"],
+            "temperature": 0.7,
+            "max_tokens": 1024,
+            "n": 1,
+            "stop": None,
         }
 
 
@@ -48,5 +39,5 @@ class GeneralModel:
         """
         # Setting the OpenAI API key got from the OpenAI dashboard
         set_openai_key(api_key)
-        output = self.query(poem.format(input = input))
+        output = self.query(input = input)
         return output
