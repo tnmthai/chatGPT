@@ -30,7 +30,7 @@ def app():
         # st.write("---")
 
         s_example = "Birds, flowers, love, sun"
-        input = st.text_input(
+        input = st.text_area(
             "Use the example below or input your own text in English",
             value=s_example,
             max_chars=150,
