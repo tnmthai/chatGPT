@@ -20,7 +20,7 @@ class GeneralModel:
             "temperature": 0.9,
             "max_tokens": 1024,            
             "n":1,      
-            "stop"="None",
+            "stop":"None",
 
 
         }
