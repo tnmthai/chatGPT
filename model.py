@@ -14,10 +14,12 @@ class GeneralModel:
         wrapper for the API to save the prompt and the result
         """
 
+    response = completion.choices[0].text
+
         # arguments to send the API
         kwargs = {
-            "engine": "text-davinci-002",
-            "temperature": 0.7,
+            "engine": "text-davinci-003",
+            "temperature": 0.5,
             "max_tokens": 1024,
             "n": 1,
             "stop": None,
