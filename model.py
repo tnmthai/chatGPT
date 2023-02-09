@@ -16,14 +16,13 @@ class GeneralModel:
 
             # arguments to send the API
         kwargs = {
-            "engine": "text-davinci-003",
-            "temperature": 0.7,
-            "max_tokens": 60,
-            "n": 1,
+            "engine": "text-davinci-002",
+            "temperature": 0,
+            "max_tokens": 64,            
             "top_p":1.0,
-            "stop": None,
+            "stop": ["\"\"\""],
             "frequency_penalty":0.0,
-            "presence_penalty":1            
+            "presence_penalty":0.0          
 
             
         }
