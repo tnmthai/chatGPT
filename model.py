@@ -17,7 +17,7 @@ class GeneralModel:
             # arguments to send the API
         kwargs = {
             "engine": "text-davinci-003",
-            "temperature": 0.0,
+            "temperature": 0.7,
             "max_tokens": 1024,            
             "top_p":1.0,            
             "frequency_penalty":0.0,
